@@ -1,0 +1,8 @@
+<a data-ui-sref="instagramNew">New Instagram</a>
+
+<h2>All WDInstagrams</h2>
+
+<div data-ng-repeat="instagram in vm.instagrams">
+  <p><a data-ui-sref="instagramShow({id: instagram.id})">{{instagram.author}}</a></p>
+  <a data-ui-sref="instagramEdit({id: instagram.id})">Edit</a>
+</div>
